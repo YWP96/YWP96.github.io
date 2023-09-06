@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>Image Editor</title>
+</head>
+<body>
+    <div class="image-container">
+        <script>
+            for (let i = 0; i < 9; i++) {
+                document.write('<div class="image-item empty"></div>');
+            }
+        </script>
+    </div>
+    <button id="insert-image-button">이미지 삽입</button>
+    <button id="save-button">저장</button>
+    <div id="custom-alert" class="hidden">
+        <!-- alert.html 파일을 여기에 포함 -->
+    </div>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+    <script src="/js/cmnAlert.js"></script>
+    <script src="/js/imageCall.js"></script>
+</body>
+</html>
